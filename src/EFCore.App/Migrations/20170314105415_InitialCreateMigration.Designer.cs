@@ -8,13 +8,13 @@ using EFCore.App.Data;
 namespace EFCore.App.Migrations
 {
     [DbContext(typeof(CommonDbContext))]
-    [Migration("20170227231210_InitialCreateMigration")]
+    [Migration("20170314105415_InitialCreateMigration")]
     partial class InitialCreateMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
-                .HasAnnotation("ProductVersion", "1.1.0-rtm-22752")
+                .HasAnnotation("ProductVersion", "1.1.1")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("EFCore.App.Model.Currency", b =>
